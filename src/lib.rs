@@ -1,6 +1,3 @@
-extern crate reqwest;
-#[macro_use]
-extern crate lazy_static;
 extern crate ring;
 extern crate data_encoding;
 extern crate serde;
@@ -8,15 +5,9 @@ extern crate serde_json;
 #[macro_use]
 extern crate serde_derive;
 
-use reqwest::Client;
-
 use ring::hmac;
 use ring::digest::SHA1;
 use data_encoding::BASE64URL;
-
-lazy_static! {
-    pub static ref HTTP_CLIENT: Client = Client::new();
-}
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
