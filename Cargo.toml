@@ -1,6 +1,6 @@
 [package]
 name            = "qiniu"
-version         = "0.1.1"
+version         = "0.1.2"
 license         = "MIT"
 authors         = ["mitum <dangcheng@hotmail.com>"]
 description     = "qiniu"
@@ -17,7 +17,7 @@ exclude         = [
 ]
 
 [dependencies]
-ring = "0.12"
+ring = "0.13"
 data-encoding = "2.1"
 serde = "1.0"
 serde_derive = "1.0"
